@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Simplilearn">
+  <test thread-count="5" name="SmokeTest">
+  <groups>
+  		<run>
+  			<include name="sanity"/>
+  		</run>	
+  	</groups>
+ 
+    <classes>
+      <class name="testng.Annotations_Example"/>
+      <class name="testng.Annotations_Example2">
+      	<methods>
+      		<include name="test4"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
